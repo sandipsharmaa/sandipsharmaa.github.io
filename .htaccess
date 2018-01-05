@@ -1,8 +1,0 @@
-<IfModule mod_headers.c>
-  <FilesMatch "\.(js|css|xml|gz|html)$">
-    Header append Vary: Accept-Encoding
-  </FilesMatch>
-</IfModule>
-
-
-SetEnvIfNoCase Referer darodar.com spambot=yesOrder allow,denyAllow from allDeny from env=spambotSetEnvIfNoCase Referer hulfingtonpost.com spamlink=yesOrder allow,denyAllow from allDeny from env=spamlink
