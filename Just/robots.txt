@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /locanix/
-Disallow: /interactcrm/
-Disallow: /dropper/
