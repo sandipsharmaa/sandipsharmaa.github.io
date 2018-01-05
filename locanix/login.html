@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Locanix">
+    <link rel="icon" href="images/favicon.ico">
+
+    <title>VHIZE Login</title>
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/simplegrid.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+
+</head>
+
+<body class="login">
+
+    <div class="notification success">
+        <i class="fa-check"></i> Your request has been successfully submitted.
+
+        <div class="close"><a href="#"><i class="fa-remove"></i></a>
+        </div>
+        <div class="clearfix"></div>
+
+    </div>
+
+    <div class="back-to-home"><a href="#"><i class="fa-chevron-left"></i> BACK TO HOMEPAGE</a>
+    </div>
+
+    <div class="login-main">
+
+        <div class="pad-20">
+
+            <div class="logo-login">
+                <img src="images/logo.png" alt="">
+            </div>
+
+            <div class="txt-fields email-icn">
+                <input name="login" type="text" class="email error" placeholder="Enter your email:">
+            </div>
+
+            <div class="txt-fields pass-icn">
+                <input name="login" type="password" class="email" placeholder="Enter your password:">
+            </div>
+
+            <div class="txt-fields">
+                <input name="login" type="button" class="login-bt" id="login-bt" value="LOG IN">
+            </div>
+
+            <div class="txt-fields light-color">
+                <div class="remember-chk">
+                    <label>
+                        <input name="remember" type="checkbox" value="remember"> Keep me signed in</label>
+                </div>
+                <div class="push-right"><a href="#" class="forgot">Forogot Password!</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="or-line">
+                <span>OR</span>
+            </div>
+
+            <div class="sign-up-btns">
+                <button class="twitter-bt"><i class="fa-twitter"></i> TWITTER</button>
+                <button class="fb-bt"><i class="fa-facebook"></i> FACEBOOK</button>
+                <div class="sign-up-btns">
+                    <button class="new-ac-bt">CREATE NEW ACCOUNT</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Jqueries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+		$("#login-bt").click(function(){
+		$(".notification").toggleClass("active");
+		}); 
+	</script>
+
+</body>
+
+</html>

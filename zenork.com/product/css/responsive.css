@@ -1,0 +1,359 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* -------------------------------------------------------------------------------
+==================================================================================
+		                    RESPONSIVE FIXES
+==================================================================================
+--------------------------------------------------------------------------------*/
+
+@media (max-width: 1200px) { 
+
+.main { width:1004px; }
+
+/*HEADER FIX*/
+.head-container { width:90%; }
+#nav { margin-right:10px; }
+.logo { margin-left:10px; }
+.head-button { width:190px; font-size:11px; padding-left:48px; }
+.head-button:after { background-size:80%; top:22px; }
+.app-store-header span { font-size:21px; }
+.play-store-header span { font-size:17px; }
+.head-media img { max-width:80%; }
+
+
+/* CONTENT SECTION FIX*/
+.description-container { width:90%; margin:0 auto; }
+.description-container .texts h2 { font-size: 27px; }
+.description-container .texts.pad-l { padding-left:2.887%; }
+.description-container .texts.pad-r { padding-right:2.887%; }
+
+/* TEAM SECTION FIX*/
+.team-widget { width:90%; }
+
+/* FEATURED SECTION FIX*/
+.featured { padding: 60px 0; }
+ul.featured-logos li { width:15.094339%; padding-right:18px; height:auto; }
+ul.featured-logos li img { height:auto; width:140px;}
+ul.featured-logos li img { height:50px; width:auto; }
+
+
+/* PRICING SECTION FIX*/
+.pricing-boxes { width:90%; margin:0 auto; }
+
+/* NEWSLETTER SECTION FIX*/
+.newsletter .main { width: 984px; }
+
+/* CONTACT US SECTION FIX*/
+.contact-fourm { width:473px; padding-right:20px; margin-left:10px;  }
+.map-and-address { width:493px; }
+.text-field input { width: 387px; }
+.text-field textarea { width: 387px; }
+.text-field button { width: 470px; }
+.send-message:before { margin-left:-127px; top:46%; }
+
+#map { width:493px; height:230px; }
+
+/* FOOTER SECTION FIX*/
+.footer-menu li { padding:25px 15px; }
+
+}
+
+
+
+@media (max-width: 1023px) { 
+
+/* NAVIGATION */
+.fixed-nav { overflow:visible; }
+#nav h3 { display:block; }
+
+#nav { margin-right:0px; display:block; }
+#nav a { float:none; text-align:left; border-bottom:1px solid #258ecd;  padding:1em; font-size:18px; height:auto; 
+font-family:proxima_nova_rgregular, Arial, Helvetica, sans-serif; color:#FFFFFF; }
+#nav .current a { background:#258ecd; color:#FFFFFF; }
+#nav a:hover { background:#258ecd; color:#FFFFFF; }
+
+.resp-nav { display:inline-block; float:right; margin-right: 30px; margin-top: 26px;}
+#navToggle { font-family:'FontAwesome'; background:none; border:none; font-size:30px; cursor:pointer; }
+
+.res-nav { background:#06a9ef; position:fixed; }
+.res-nav h3 { color:#afdefa; font-size:1.9em; padding:35px 20px; margin:0; font-weight:300; background:#0d77b6; }
+
+.res-nav-vertical { width: 240px; height:100%; top:0; z-index:9999;}
+.res-nav-right { right:-240px; }
+.res-nav-right.res-nav-open { right: 0px; }
+.res-nav-push { overflow-x: hidden; position: relative; left: 0; }
+.res-nav-push-fix { overflow-x: hidden; position: fixed; left: 0px; }
+.res-nav-push-fix-left { left:-240px; }
+.res-nav-push-toleft { left:-240px; }
+.res-nav, .res-nav-push, .res-nav-push-fix { -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; transition: all 0.3s ease; }
+
+
+/*HEADER FIX*/
+.head-texts h1 { font-size:26px; line-height:40px; }
+.head-texts p { padding-top:15px; }
+.header-buttons { margin-top:20px; }
+
+.head-button { width:165px; font-size:10px; padding-left:45px; }
+.head-button:after { background-size: 70% auto; top: 23px; left: 14px;}
+
+.app-store-header span { font-size: 19px; }
+.play-store-header span { font-size: 15px; }
+
+/* FEATURED SECTION FIX*/
+ul.featured-logos li { width:14.714%; padding-right:10px; }
+ul.featured-logos li img { height:auto; width:106px;}
+ul.featured-logos li img { height:38px; width:auto; }
+
+/* REVIEWS SECTION FIX*/
+.Reviews .title { font-size: 27px; padding-bottom: 50px; }
+.review-block { display:block; width:70%; margin:0 auto; }
+
+.review-block .review-text { display:inline-block; }
+.review-block .image-holder { padding:0; margin:0 auto; display:table; }
+
+.review-block .review-text .review  { padding-top:22px; text-align:center; }
+.review-block .review-text .reviewer { text-align:center; }
+
+
+/* PRICING SECTION FIX*/
+.pricing-boxes { width: 96%; }
+.pricing-head u { display:block; float:none; text-align:center; }
+.pricing-head span { display:block; float:none; text-align:center; margin-top: 5px; }
+.pricing-head span b { font-size:22px; }
+
+.pricing-body ul { font-size:16px; }
+.pricing-body ul li { line-height:20px; }
+.pricing-button input { font-size:16px; height:70px; }
+
+/* NEWSLETTER SECTION FIX*/
+.newsletter { padding:30px 0 50px 0; }
+.newsletter .main { width: 738px; }
+.newsletter h2 { float:none; display:block; text-align:center; }
+.newsletter-fields { float:none; display:block; text-align:center; padding-top:15px; }
+
+.subscription-error { width: 100%; top:76px; left:0px; }
+.subscription-success { display:none; background:#06a9ef; font-size: 18px; height: 90px; padding-top: 40px; left: -6px; top: -54px; width: 748px; }
+
+/* CONTACT US SECTION FIX*/
+.Contact .title { text-align:center; }
+.contact-fourm { float:none; margin:0; padding:0; margin:0 auto;  }
+#contact_form { margin:0 auto; width:475px; }
+
+.map-and-address { float:none; margin:0; padding:0; margin:20px auto 0 auto; width: 475px; }
+#map { width:475px; }
+
+/* DOWNLOAD SECTION FIX*/
+.bottom-download-buttons { height:200px; padding:60px 0; }
+.bottom-download-buttons .title { font-size: 35px; }
+.bottom-download-buttons .title span { padding-top:15px; }
+
+.platform-buttons button { width: 202px !important; font-size: 20px !important; }
+.platform-buttons button:before { left: 84px !important; }
+.play-store-button, .windows-store-button { margin-left: 10px; } 
+
+/* FOOTER SECTION FIX*/
+.footer-menu li { -webkit-transition: all 200ms linear; -moz-transition: all 200ms linear; -ms-transition: all 200ms linear; -o-transition: all 200ms linear; transition: all 200ms linear; float: left; padding:0; width: 33.2%; border-right:1px solid #0e8abf; border-bottom:1px solid #0e8abf;  }
+.footer-menu li a { padding:25px 0; }
+.footer-menu li a { display:block; }
+.footer-menu li:hover { background:#0e8abf; }
+
+.footer-menu li:nth-child(3n) { border-right:none; }
+.footer-menu li:last-child { border-right:none; width:100%; }
+
+}
+
+
+
+@media (max-device-width : 768px) {
+
+/*HEADER FIX*/
+.head-media, .head-texts { display:block; }
+.head-media { max-width:100%; padding-left:0; margin-top:50px;  margin-bottom:40px; }
+.head-media img { max-width:50%; }
+
+.head-texts { max-width:100%; text-align:center; }
+.head-texts h1 { font-size: 30px; }
+.head-texts p { padding-top:15px; }
+.header-buttons { margin-top:30px; }
+
+}
+
+
+@media (max-device-width : 767px) {
+
+/*HEADER FIX*/
+.navigation-main { height: 60px; }	
+.logo { padding:0; margin-top:16px; margin-left:20px;}	
+.logo img { max-width:70%; }
+.head-media { margin-top:0; }
+
+/*NAVIGATION FIX*/
+.resp-nav { margin-right: 20px; margin-top: 14px; }
+#navToggle { font-size:24px; }
+.res-nav h3 { font-size: 1.2em; padding:16.5px 20px; }
+#nav a { font-size:13.6px; padding: 0.7em 1em; }
+.res-nav-vertical { width:180px; }
+.res-nav-right { right: -180px; }
+.res-nav-right { right: -180px; }
+.res-nav-push-toleft { left: -180px; }
+.res-nav-push-fix-left { left: -180px; }
+
+/*FEATURES FIX*/
+.Features .title { padding: 46px 0; }
+.featues-list ul { display:block; }
+.featues-list ul > li { display:block; border:none; width:auto; padding: 20px 50px; }
+
+/*CONTENT SECTION FIX*/
+.description-container, .description-container .images, .description-container .texts  { display:block; }
+.description-container .texts p { font-size: 16px; }
+.description-container .images, .description-container .texts { width:90%; margin:0 auto; }
+.description-container .texts.pad-l, .description-container .texts.pad-r { padding-left:0; padding-right:0; }
+.description-container .texts { padding-top:10px; }
+
+.seprator2 { padding-top: 25px; }
+.description-container .texts h2 { font-size:24px; padding:25px 0 0; }
+
+/*SCREEN SECTION FIX*/
+.Screens { margin-top:10px; padding:25px 0; }
+.Screens .title { font-size:25px; }
+.Screens .title span { font-size:15px; padding: 10px 0; }
+.Screens .title span b { font-size: 14px; }
+#iphone-screens img { max-width:50%; }
+
+/*SCREEN SECTION FIX*/ 
+.Reviews { padding:24px 0; }
+.Reviews .title { line-height: 35px; font-size: 24px; padding-bottom: 25px; }
+#reviews .owl-controls { margin-top:5px; }
+
+/*FEATURED SECTION FIX*/ 
+.featured { padding: 60px 0 10px 0; }
+ul.featured-logos li { width:31.214%; padding-bottom:40px; }
+
+
+/*PRICING SECTION FIX*/ 
+.Pricing { padding:24px 0; }
+.Pricing .title { font-size: 25px; padding-bottom: 15px; }
+.pricing-boxes { width:100%; display:inline-block;}
+.pricing-box { float:none; display:table; margin:0 auto; width:450px; max-width:90%; padding:0; margin-top:10px; }
+
+.pricing-head { width:auto; display:block; height:53px; padding-top:22px }
+.pricing-head u { float: left; display:inline-block; text-align:left; }
+.pricing-head span { float:right; display:inline-block; text-align:left; margin-top:0; }
+
+.pricing-body { display:block; }
+.pricing-body ul li { line-height:15px; padding: 10px 0; text-align:center; }
+
+/*TEAM SECTION FIX*/ 
+.Team { padding:24px 0; }
+.Team .title { font-size: 25px; padding-bottom: 15px; }
+.Team .title span { font-size:15px; }
+.team-boxes { padding-top:0; }
+.team-mid-sec { min-height: 90px; }
+
+/*NEWSLETTER SECTION FIX*/
+.newsletter { padding:20px 0 60px; }
+.newsletter-fields { display: table; margin:0 auto; padding-top:0; }
+.newsletter h2 { font-size:22px; }
+.newsletter .text-field { display:block; margin:10px 0 0 0; }
+.subscription-error { top:146px; }
+.subscription-success { font-size:16px; height:170px; left:-29px; padding-top:50px; top:-39px; width:120%; }
+
+/*CONTACT SECTION FIX*/
+.Contact { padding:24px 0 0; }
+.Contact .title { font-size:25px; padding-bottom:0px; }
+
+#contact_form { width: 400px; }
+.text-field input { width: 315px; }
+.text-field textarea { width: 315px; }
+.text-field button { width: 400px; }
+
+.map-and-address { width: 400px; }
+#map { width:400px; }
+.contact-details strong { padding:22px 0 11px; }
+
+/*DOWNLOAD SECTION FIX*/
+.bottom-download-buttons { padding:40px 0; height:230px; }
+.bottom-download-buttons .title { font-size: 25px; }
+.bottom-download-buttons .title span { padding-top:7px; font-size:18px; }
+.platform-buttons { padding-top:20px; }
+
+/*FOOTER SECTION FIX*/
+.footer-menu li { width:33%; font-size:16px; }
+.footer-menu li a { padding:12px 0; }
+.copyright { padding:20px 0; }
+
+}
+
+
+@media (max-device-width : 479px) {
+	
+/*HEADER FIX*/
+.head-media img { max-width: 80%; }
+.head-texts h1 { font-size:23px; line-height:30px; }	
+.head-texts p { font-size:15px; }
+
+.header-buttons { margin-top:15px; }
+.head-button { width:210px; }
+.head-button:after { background-size:100% auto; left:23px; top:20px; }
+.play-store-header { margin:10px 0px 20px 10px; }
+
+/*NAVIGATION FIX*/
+#nav a { font-size:16px; padding:1em; color:#000; }
+
+/*FEATURES FIX*/
+.featues-list ul > li > b { font-size:18px; padding-bottom:5px; }
+
+/*CONTENT SECTION FIX*/
+.description-container .texts h2 { font-size:22px; padding:25px 0 0; }
+.description-container .texts p { font-size:14px; line-height:1.6; padding:10px 0; }
+.description-container .texts ul li { font-size:14px; }
+
+/*FEATURED SECTION FIX*/
+.featured { padding:40px 0 20px; }
+ul.featured-logos li { padding-bottom:25px; width:48.414%; }
+ul.featured-logos li:nth-child(2n) { padding-right:0; }
+
+/*REVIEWS SECTION FIX*/
+.Reviews .title { padding:0 10px 25px 10px; font-size:20px; line-height:30px; }
+.review-block .review-text .review { font-size:24px; line-height:33px; }
+
+/*PRICING SECTION FIX*/
+.pricing-head { font-size:16px; }
+.pricing-head span { font-size:18px; }
+
+/*TEAM SECTION FIX*/
+.team-bot-sec a { height:25px; padding:10px; }
+
+/*NEWSLETTER SECTION FIX*/
+.newsletter h2 { font-size:17px; }
+.text-field.emailnews input { width:200px; }
+
+.subscription-error { top: 128px; }
+.subscription-success { left:0; width:101%; }
+
+/*CONTACT SECTION FIX*/
+#contact_form { width:288px; }
+.contact-fourm { width:320px; }
+
+.text-field input { width:205px; }
+.text-field textarea { width:205px; }
+.text-field button { width:290px; }
+.send-message:before { margin-left:-119px; }
+
+.map-and-address { width: 290px; }
+#map { width: 290px; }
+.contact-details strong { padding:32px 0 11px; }
+.social-media-icons .title { padding-bottom:20px; }
+
+/*DOWNLOAD SECTION FIX*/
+.bottom-download-buttons .title { padding:0 10px; }
+.bottom-download-buttons .title span { font-size: 14px; }
+.bottom-download-buttons { height: 330px; }
+	
+/*FOOTER SECTION FIX*/
+.footer-menu li { font-size: 14px; }
+.copyright { font-size:12px; }
+
+		
+}
